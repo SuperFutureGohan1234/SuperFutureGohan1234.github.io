@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <title>Weather Blazer</title>
     <link rel="icon" href="favicon.ico">
@@ -10,44 +11,48 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- Your CSS Linked Below-->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Weather Icons-->
+    <link rel="stylesheet" href="css/weather-icons.min.css">
     <!-- jQuery Linked Below-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-     <!-- Bootstrap Javascript -->
+    <!-- Bootstrap Javascript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <!-- Your Javascript Linked Below-->
-    <script src="js/script.js" defer></script> 
+    <script src="icon_map.js" defer></script>
+    <script src="js/script.js" defer></script>
   </head>
+  
   <body>
     <!--this is the nav-->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
-          <div class="navbar-header">
-              <a class="navbar-brand" href="#">Weather Blazer</a>
-          </div>
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Weather Blazer</a>
         </div>
       </div>
+      </div>
     </nav>
-    
+  
     <!--this is the body-->
     <div class="container">
-      
+  
       <!--this is the hero-->
       <div class="jumbotron jumbotron-fluid">
         <div class="container">
           <h1 class="display-4 text-center">Weather Blazer</h1>
           <p class="lead text-center">Please enter a zip code below to view the weather</p>
           <div>
-            <input id="zipInput" type="text" class="form-control" placeholder="ex.12345"/>
+            <input id="zipInput" type="text" class="form-control" placeholder="ex.12345" />
             <button id="submit" type="submit" class="btn btn-default">Submit</button>
           </div>
         </div>
       </div>
-      
+  
       <!--this is the results-->
-      <div class="row">
+      <div class="row" >
         <div id="results"></div>
       </div>
     </div>
+    
   </body>
-
 </html>

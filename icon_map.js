@@ -1,4 +1,6 @@
-{
+/* global iconMap */
+
+iconMap ={
   "200": {
     "label": "thunderstorm with light rain",
     "icon": "storm-showers"

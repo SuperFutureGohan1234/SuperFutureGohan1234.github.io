@@ -12,11 +12,17 @@ function generateIcon(id) {
   // If we are not in the ranges mentioned above, add a day/night prefix.
   if (!(id > 699 && id < 800) && !(id > 899 && id < 1000)) {
     icon = 'day-' + icon;
-  }
+  } 
+ 
+  else  {  [
+    rain="https://media.giphy.com/media/3oz8xVUm3mOvsSRqUg/giphy.gif"
+    ]; 
+      
 
   // Finally tack on the prefix.
   return icon = prefix + icon;
-};
+  }
+}
 
 
 $('#submit').click(function() {
@@ -30,15 +36,15 @@ $('#submit').click(function() {
                 
                     "<span><i class='" + generateIcon(weatherId) + "'></i></span>" + 
                     
-                    "<h1>"+ data.name +"</h1>" + 
+                    "<h1 class='bluetext'>"+ data.name +"</h1>" + 
                     
-                    "<h2>"+ Math.round(tempConvert(data.main.temp)) +  "&#8457; </h2>" +
+                    "<h2 class='whitetext'>"+ Math.round(tempConvert(data.main.temp)) +  "&#8457; </h2>" +
                     
-                     "<h2>"+ iconMap[weatherId].label +"</h2>" + 
+                     "<h2 class='whitetext'>"+ iconMap[weatherId].label +"</h2>" + 
                      
-                     "<h4>Humidity: " + data.main.humidity + "%</h4>" + 
+                     "<h4 class='whitetext'>Humidity: " + data.main.humidity + "%</h4>" + 
                      
-                     "<h4>Wind Speed: "+ data.wind.speed + "mph</h4>" + 
+                     "<h4 class='whitetext'>Wind Speed: "+ data.wind.speed + "mph</h4>" + 
                     
                 "</div>"
                 

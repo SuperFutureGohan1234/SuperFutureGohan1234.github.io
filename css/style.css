@@ -1,4 +1,4 @@
-h1 {
+.bluetext {
   color: #3171d8 ;
 }
 
@@ -10,4 +10,18 @@ h1 {
        url('../weathericons-regular-webfont.woff') format('woff'), /* Pretty Modern Browsers */
        url('../weathericons-regular-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
        url('../weathericons-regular-webfont.svg') format('svg'); /* Legacy iOS */
+}
+body{
+  
+  background-image: url("https://media.giphy.com/media/dI3D3BWfDub0Q/giphy.gif"); 
+  background-repeat:no-repeat;
+    background-size:cover;
+}
+
+.whitetext{
+  color: white;
+}
+
+#inasub{
+  text-align: center;
 }
